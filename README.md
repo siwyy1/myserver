@@ -1,7 +1,7 @@
 # myserver
 
 ![Ubuntu Server](assets/ubuntu-server.png)
-# Link:
+# Link: https://siwyit.pl/
 
 This repository contains the configuration of my on-premise Ubuntu Server.
 
