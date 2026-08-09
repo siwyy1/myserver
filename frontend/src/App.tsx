@@ -61,7 +61,7 @@ function App() {
           <p>
 
             Interesuje mnie rola
-            <strong> Data Scientist </strong>
+            <strong> ML Engineer </strong>
             oraz tworzenie modeli sztucznej inteligencji.
 
             <br />
