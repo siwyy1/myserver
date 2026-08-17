@@ -24,28 +24,6 @@ services:
 
     restart: unless-stopped
     
-  grafana:
-    image: grafana/grafana-oss:latest
-    container_name: grafana
-
-    ports:
-      - "192.168.100.119:3000:3000"
-
-    restart: unless-stopped
-
-  prometheus:
-    image: prom/prometheus:latest
-    container_name: prometheus
-
-
-    ports:
-      - "192.168.100.119:9090:9090"
-
-    volumes:
-      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
-
-    restart: unless-stopped
-  
   cloudflared:
     image: cloudflare/cloudflared:latest
     container_name: cloudflared

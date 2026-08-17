@@ -1,0 +1,67 @@
+@media (max-width: 1440px) {
+    .navbar { padding: 0 50px; }
+    .navbar::after { right: 50px; left: 50px; }
+    .hero h1 { font-size: clamp(7rem, 13vw, 9rem); }
+}
+
+@media (max-width: 1200px) {
+    .navbar { padding: 0 40px; }
+    .navbar::after { right: 40px; left: 40px; }
+    .nav-links { gap: 28px; }
+    .hero h1 { font-size: 7rem; }
+    .hero p { max-width: 650px; font-size: 1.05rem; }
+}
+
+@media (max-width: 992px) {
+    .navbar { height: 72px; padding: 0 30px; }
+    .navbar::after { right: 30px; left: 30px; }
+    .nav-links { gap: 18px; }
+    .nav-links a { font-size: .88rem; }
+    .hero { padding: 120px 20px 80px; }
+    .hero h1 { font-size: 6rem; }
+    .hero-subtitle { font-size: .95rem; letter-spacing: 10px; }
+    .hero p { font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+    .navbar { padding: 0 22px; }
+    .navbar::after { right: 22px; left: 22px; }
+    .logo { font-size: 1.7rem; }
+    .nav-links {
+        position: fixed; top: 0; right: 0; left: auto;
+        flex-direction: column; align-items: flex-start;
+        width: min(82vw, 360px); height: 100vh; padding: 105px 30px 40px; gap: 28px;
+        visibility: hidden; background: rgba(5, 5, 5, .96);
+        border-left: 1px solid rgba(255, 255, 255, .1);
+        backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px);
+        transform: translateX(100%);
+        transition: transform .35s ease, visibility .35s ease;
+    }
+    .nav-links--open { visibility: visible; transform: translateX(0); }
+    .nav-links a { font-size: 1.08rem; }
+    .menu-toggle { display: block; }
+    .hero { min-height: 100vh; }
+    .hero-content { width: 100%; }
+    .hero h1 { font-size: 4.8rem; letter-spacing: -4px; }
+    .hero-subtitle { margin-bottom: 24px; font-size: .9rem; letter-spacing: 7px; }
+    .hero p { font-size: .96rem; line-height: 1.8; }
+    .projects-dropdown { width: min(100%, 320px); margin-top: 42px; }
+}
+
+@media (max-width: 576px) {
+    .navbar { height: 68px; padding: 0 18px; }
+    .navbar::after { right: 18px; left: 18px; }
+    .logo { font-size: 1.45rem; }
+    .hero { padding: 100px 18px 60px; }
+    .hero h1 { font-size: 3.8rem; letter-spacing: -3px; }
+    .hero-subtitle { font-size: .78rem; letter-spacing: 5px; }
+    .hero p { font-size: .92rem; line-height: 1.7; }
+    .projects-toggle { height: 54px; font-size: .85rem; }
+    .hero-content::after { height: 45px; margin-top: 55px; }
+}
+
+@media (max-width: 400px) {
+    .hero h1 { font-size: 3.2rem; }
+    .hero-subtitle { letter-spacing: 4px; }
+    .hero p { font-size: .88rem; }
+}
