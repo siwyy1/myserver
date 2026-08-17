@@ -11,8 +11,6 @@ Current stack:
 - Docker & Docker Compose
 - Cloudflare
 - Nginx
-- Grafana
-- Prometheus
 - React
 
 This homelab serves as my personal environment for learning Linux administration, networking, containerization, monitoring, and self-hosting. More services and infrastructure components will be added as the project evolves.
