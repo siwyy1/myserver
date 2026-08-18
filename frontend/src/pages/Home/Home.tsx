@@ -3,7 +3,7 @@ import "./styles/navbar.css";
 import "./styles/hero.css";
 import "./styles/projects.css";
 import "./styles/responsive.css";
-import pythonLogo from "../../assets/python.png";
+import pythonLogo from "../../assets/letter.png";
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
