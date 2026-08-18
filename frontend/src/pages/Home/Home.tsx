@@ -3,6 +3,7 @@ import "./styles/navbar.css";
 import "./styles/hero.css";
 import "./styles/projects.css";
 import "./styles/responsive.css";
+import pythonLogo from "../../assets/python.png";
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ function Home() {
       <header className="navbar">
 
         <div className="logo">
-          AI/ML
+          <img src={pythonLogo} alt="Python" />
         </div>
 
         <nav

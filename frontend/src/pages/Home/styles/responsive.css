@@ -26,7 +26,7 @@
 @media (max-width: 768px) {
     .navbar { padding: 0 22px; }
     .navbar::after { right: 22px; left: 22px; }
-    .logo { font-size: 1.7rem; }
+    .logo img { height: 60px; }
     .nav-links {
         position: fixed; top: 0; right: 0; left: auto;
         flex-direction: column; align-items: flex-start;
@@ -51,7 +51,7 @@
 @media (max-width: 576px) {
     .navbar { height: 68px; padding: 0 18px; }
     .navbar::after { right: 18px; left: 18px; }
-    .logo { font-size: 1.45rem; }
+    .logo img { height: 56px; }
     .hero { padding: 100px 18px 60px; }
     .hero h1 { font-size: 3.8rem; letter-spacing: -3px; }
     .hero-subtitle { font-size: .78rem; letter-spacing: 5px; }

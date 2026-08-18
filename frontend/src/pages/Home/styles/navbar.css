@@ -10,8 +10,10 @@
     height: 1px; background: rgba(255, 255, 255, .08);
 }
 .logo {
-    color: #fff; font-size: 2rem; font-weight: 800; letter-spacing: -.5px;
     user-select: none; animation: fadeLeft .9s ease;
+}
+.logo img {
+    display: block; width: auto; height: 68px; object-fit: contain;
 }
 .nav-links {
     position: absolute; left: 50%; display: flex; align-items: center;
