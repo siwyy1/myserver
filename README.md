@@ -24,4 +24,4 @@ Because incoming connections were blocked by CGNAT, I decided to use **Cloudflar
 
 This solution provides secure HTTPS access to my self-hosted services without exposing my home network or requiring port forwarding.
 
-![React](assets/logologo.png)
+![React](assets/reactjs.jpeg)
