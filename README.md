@@ -12,6 +12,7 @@ Current stack:
 - Cloudflare
 - Nginx
 - React
+- FastAPI (not yet initialized)
 
 This homelab serves as my personal environment for learning Linux administration, networking, containerization, monitoring, and self-hosting. More services and infrastructure components will be added as the project evolves.
 
@@ -23,4 +24,4 @@ Because incoming connections were blocked by CGNAT, I decided to use **Cloudflar
 
 This solution provides secure HTTPS access to my self-hosted services without exposing my home network or requiring port forwarding.
 
-![React](assets/reactjs.jpeg)
+![React](assets/logologo.png)
