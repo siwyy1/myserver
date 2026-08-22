@@ -1,30 +1,14 @@
-import { useState, type FormEvent, type MouseEvent } from "react";
+import { useState } from "react";
 import "./styles/navbar.css";
 import "./styles/hero.css";
 import "./styles/projects.css";
-import "./styles/contact.css";
 import "./styles/responsive.css";
 import pythonLogo from "../../assets/letter.png";
 
 function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [areProjectsOpen, setAreProjectsOpen] = useState(false);
-  const [formMessage, setFormMessage] = useState("");
-
   const closeMenu = () => setIsMenuOpen(false);
-
-  const scrollToContact = (event: MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
-    closeMenu();
-    document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleContactSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setFormMessage(
-      "Formularz nie jest gotowy. Kliknij email obok.",
-    );
-  };
 
   return (
     <main className="app">
@@ -50,6 +34,23 @@ function Home() {
           >
             GitHub
           </a>
+          <a
+            href="https://www.kaggle.com/siwekk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+          >
+            Kaggle
+          </a>          
+
+          <a
+            href="https://huggingface.co/Siwy1"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+          >
+            Hugging Face
+          </a>
 
           <a
             href="https://www.linkedin.com/in/kamil-siwek-ba611b42a/"
@@ -60,7 +61,7 @@ function Home() {
             LinkedIn
           </a>
 
-          <a href="#kontakt" onClick={scrollToContact}>Kontakt</a>
+          <a href="mailto:lxqd@wp.pl" onClick={closeMenu}>Email</a>
 
         </nav>
 
@@ -143,51 +144,6 @@ function Home() {
 
       </section>
 
-      <section id="kontakt" className="contact-section" aria-labelledby="contact-title">
-        <div className="contact-intro">
-          <span className="section-label">NAPISZ DO MNIE</span>
-          <h2 id="contact-title">Porozmawiajmy<br />o Twoim pomyśle.</h2>
-          <p>
-            Masz pytanie, propozycję współpracy albo ciekawy projekt?
-            Wypełnij formularz.
-          </p>
-          <a className="contact-email" href="mailto:lxqd@wp.pl">lxqd@wp.pl</a>
-        </div>
-
-        <form className="contact-form" onSubmit={handleContactSubmit}>
-          <div className="form-row">
-            <div className="form-field">
-              <label htmlFor="name">Imię</label>
-              <input id="name" name="name" type="text" autoComplete="name" placeholder="Twoje imię" required />
-            </div>
-
-            <div className="form-field">
-              <label htmlFor="email">Adres e-mail</label>
-              <input id="email" name="email" type="email" autoComplete="email" placeholder="ty@example.com" required />
-            </div>
-          </div>
-
-          <div className="form-field">
-            <label htmlFor="subject">Temat</label>
-            <input id="subject" name="subject" type="text" placeholder="W czym mogę pomóc?" required />
-          </div>
-
-          <div className="form-field">
-            <label htmlFor="message">Wiadomość</label>
-            <textarea id="message" name="message" rows={6} placeholder="Opowiedz krótko o swoim pomyśle..." required />
-          </div>
-
-          <button className="contact-submit" type="submit">
-            <span>WYŚLIJ WIADOMOŚĆ</span>
-            <span aria-hidden="true">↗</span>
-          </button>
-
-          <p className="form-status" role="status" aria-live="polite">
-            {formMessage}
-          </p>
-        </form>
-      </section>
-      
     </main>
   );
 }

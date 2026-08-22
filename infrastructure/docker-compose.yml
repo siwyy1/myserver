@@ -20,9 +20,8 @@ services:
 
       - ../frontend/dist:/usr/share/nginx/html:ro
 
-
-
     restart: unless-stopped
+
     
   cloudflared:
     image: cloudflare/cloudflared:latest
